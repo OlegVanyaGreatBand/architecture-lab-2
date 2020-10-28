@@ -28,3 +28,16 @@ func TestHandlCompute(t *testing.T) {
 
 	assert.Equal(t,true, out.called)
 }
+
+func TestHandlComputeIncorrect(t *testing.T) {
+	exp := " + 5 * - 4 2 3"
+	in := strings.NewReader(exp)
+	out := outputTest{}
+
+	handler := ComputeHandler{
+		In: in,
+		Out: &out,
+	}
+	err := handler.Compute()
+	assert.NotNil(t, err)
+}
