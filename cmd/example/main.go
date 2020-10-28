@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	lab2 "github.com/OlegVanyaGreatBand/architecture-lab-2."
+	lab2 "github.com/OlegVanyaGreatBand/architecture-lab-2"
 	"io"
 	"io/ioutil"
 	"os"
