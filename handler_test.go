@@ -16,7 +16,7 @@ func (o *outputTest) Write(p []byte) (n int, err error) {
 }
 
 func TestHandlCompute(t *testing.T) {
-	exp := " + 5 * - 4 2 3"
+	exp := "+ 5 * - 4 2 3"
 	in := strings.NewReader(exp)
 	out := outputTest{}
 
