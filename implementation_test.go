@@ -55,7 +55,8 @@ func TestPrefixComputeIncorrect(t *testing.T) {
 	assert.NotNil(t, err)
 }
 
-func ExamplePrefixCompute() {
+func ExampleComputePrefix() {
+	// example of prefix expression, returning res and error
 	res, _ := ComputePrefix("+ 2 2")
 	fmt.Println(res)
 
